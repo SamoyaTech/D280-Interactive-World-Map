@@ -1,0 +1,22 @@
+.container {
+    display:flex;
+    min-height: 100vh;
+}
+
+.map{
+  flex: 1;
+  max-width: 80%;
+  padding: 20px;
+  
+}
+
+.country-info {
+   flex:1; 
+   border: 2px solid black;
+   padding: 20px;
+   border-radius: 2px;
+   background-color: rgb(0, 166, 255);
+   height: 40%;
+   margin:20px;
+   max-width: 20%;
+}
