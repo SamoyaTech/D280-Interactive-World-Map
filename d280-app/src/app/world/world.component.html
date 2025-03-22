@@ -1288,14 +1288,20 @@
     </svg>
   </div>
 
-  <div class="country-info">
-    <strong>Chad</strong>
+  <div class="country-info" *ngIf="countryDetails; else noData">
+    <strong> {{ countryDetails?.name }} </strong>
     <ul>
-      <li><strong>Capital:</strong> N'Djamena</li>
-      <li><strong>Region:</strong> Sub-Saharan Africa</li>
-      <li><strong>Income Level:</strong> Low income</li>
-      <li><strong>Longitude:</strong> 15.0000</li>
-      <li><strong>Latitude:</strong> 12.0000</li>
+      <li><strong>Capital:</strong> {{ countryDetails?.capitalCity }}</li>
+      <li><strong>Region:</strong> {{ countryDetails?.region?.value }}</li>
+      <li>
+        <strong>Income Level:</strong> {{ countryDetails?.incomelevel?.value }}
+      </li>
+      <li><strong>Longitude:</strong> {{ countryDetails?.longitude }}</li>
+      <li><strong>Latitude:</strong> {{ countryDetails?.latitude }}</li>
     </ul>
   </div>
 </div>
+
+<ng-template #noData>
+  <p>No country details available.</p>
+</ng-template>
