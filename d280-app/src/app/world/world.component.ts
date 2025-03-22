@@ -1,5 +1,3 @@
-
-
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './world.component.css'
 })
 export class WorldComponent {
+  
 
-}
+  //mouseover
+  
+    
+  }
+
+
