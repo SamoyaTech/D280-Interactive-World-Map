@@ -1,3 +1,7 @@
+<div class="heading">
+  <h1>Interactive World Map</h1>
+</div>
+
 <div class="container">
   <div class="map">
     <svg
@@ -1292,7 +1296,9 @@
   </div>
 
   <div class="country-info" *ngIf="countryDetails; else noData">
-    <strong> {{ countryDetails?.name }} </strong>
+    <h2>
+      <strong> {{ countryDetails?.name }} </strong>
+    </h2>
     <ul>
       <li><strong>Capital:</strong> {{ countryDetails?.capitalCity }}</li>
       <li><strong>Region:</strong> {{ countryDetails?.region?.value }}</li>

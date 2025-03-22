@@ -20,9 +20,10 @@ export class WorldComponent {
       const regionName = target.getAttribute('name');
       if (regionName) {
         console.log(`Hovered over: ${regionName}`);
-        // save original color
+
+  
         if(!target.getAttribute('data-orginal-color')){
-          const currentColor = target.style.fill || 'black'; //default to black if no color is set
+          const currentColor = target.style.fill || 'black'; 
           target.setAttribute('data-orginal-color', currentColor);//save orginal color
         }
         target.style.fill = 'yellow'; //highlight region
