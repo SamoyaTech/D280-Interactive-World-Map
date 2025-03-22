@@ -1,6 +1,9 @@
 <div class="container">
   <div class="map">
     <svg
+      (mouseover)="onMouseOver($event)"
+      (click)="onPathClick($event)"
+      (mouseout)="onMouseOut($event)"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1010 666"
       aria-label="World Map"
@@ -1294,7 +1297,7 @@
       <li><strong>Capital:</strong> {{ countryDetails?.capitalCity }}</li>
       <li><strong>Region:</strong> {{ countryDetails?.region?.value }}</li>
       <li>
-        <strong>Income Level:</strong> {{ countryDetails?.incomelevel?.value }}
+        <strong>Income Level:</strong> {{ countryDetails?.incomeLevel?.value }}
       </li>
       <li><strong>Longitude:</strong> {{ countryDetails?.longitude }}</li>
       <li><strong>Latitude:</strong> {{ countryDetails?.latitude }}</li>

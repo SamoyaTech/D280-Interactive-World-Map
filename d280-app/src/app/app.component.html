@@ -6,4 +6,7 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<app-world [countryDetails]="countryData"></app-world>
+<app-world
+  (regionSelected)="getCountryData($event)"
+  [countryDetails]="countryData"
+></app-world>
