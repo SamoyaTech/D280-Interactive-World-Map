@@ -1,23 +1,59 @@
 # World Map Angular Project
 
-This project is an Angular application designed to display an interactive world map. The map allows users to click on individual countries to retrieve and display specific information about each country.
+Interactive World Map — Angular
 
-# Student ID:
+An Angular application that presents an interactive SVG world map, where selecting a country displays live data pulled from the World Bank API — including country name, capital, region, income level, and coordinates.
 
-011993367
+Overview
 
-# Angular Project Configuration:
+Built for WGU's JavaScript Programming course (D280), this project converts a static SVG map into a fully interactive Angular component. Hovering over a country highlights it, and clicking it triggers a World Bank API call that populates a data panel alongside the map.
 
-Angular CLI: 19.2.3
-Node: 20.19.0
-Package Manager: npm 10.8.2
-OS: win32 x64
-Angular Version: 19.2.3
+Features
 
-# Installation
 
-Clone the repository:
+Interactive SVG world map built as an Angular component, with each country wired to mouse event handlers
+Hover to highlight a country; click to fetch and display its data
+Live country data fetched from the World Bank API, showing six properties per country:
 
-```bash
-git clone https://gitlab.com/wgu-d280-project/WGU-D280-Project.git
-```
+Country name
+Capital city
+Region
+Income level
+Latitude
+Longitude
+
+
+
+Angular routing configured to redirect from the default URL into the map view
+Two-column layout: map on one side, country information panel on the other
+
+
+Tech Stack
+
+
+Angular (CLI v16.1.6)
+TypeScript
+SVG
+World Bank API
+
+
+Running Locally
+
+Requires Node.js and the Angular CLI installed.
+
+bashgit clone https://github.com/SamoyaTech/D280-Interactive-World-Map.git
+cd D280-Interactive-World-Map/d280-app
+npm install
+ng serve
+
+Then navigate to http://localhost:4200/ in your browser. The app will automatically reload on source file changes.
+
+Building
+
+bashng build
+
+Build artifacts are output to the dist/ directory.
+
+Course Context
+
+Built for WGU's D280: JavaScript Programming course, focused on using existing frameworks (Angular), SVG assets, and REST APIs to add interactivity and data capabilities to a web application.
