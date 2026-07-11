@@ -2,7 +2,7 @@
 
 An Angular application that presents an interactive SVG world map, where selecting a country displays live data pulled from the World Bank API - including country name, capital, region, income level, and coordinates.
 
-Live site: https://interactive-w0rld-map.netlify.app/map 
+🔗 Live site: https://interactive-w0rld-map.netlify.app/map
 
 ## Overview
 
