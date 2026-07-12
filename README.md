@@ -1,12 +1,8 @@
 # World Map - Angular Project
 
-An Angular application that presents an interactive SVG world map, where selecting a country displays live data pulled from the World Bank API - including country name, capital, region, income level, and coordinates.
+An Angular application that presents an interactive SVG world map, where selecting a country displays live data pulled from the World Bank API, including country name, capital, region, income level, and coordinates.
 
 🔗 Live site: https://interactive-w0rld-map.netlify.app/map
-
-## Overview
-
-Built for WGU's JavaScript Programming course (D280), this project converts a static SVG map into a fully interactive Angular component. Hovering over a country highlights it, and clicking it triggers a World Bank API call that populates a data panel alongside the map.
 
 ## Features
 
