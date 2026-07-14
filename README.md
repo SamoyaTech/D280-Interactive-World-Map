@@ -21,6 +21,7 @@ An Angular application that presents an interactive SVG world map, where selecti
 - Angular (CLI v16.1.6)
 - TypeScript
 - World Bank API
+- SVG(interactive rendering)
 
 ## Running Locally
 
